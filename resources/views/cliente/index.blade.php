@@ -1,5 +1,5 @@
 @extends('layouts.plantillaBase');
 
 @section('contenido')
-<h1>hola</h1>
+<a href="articulos/create" class="btn btn-primary">Nuevo cliente</a>
 @endsection

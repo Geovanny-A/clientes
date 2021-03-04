@@ -54,7 +54,7 @@
 <script>
     $(document).ready(function() {
         $('#clientes').DataTable({
-            "lengthMenu": [[5,10,50, -1], [5, 10, 50, "All"]]
+            "lengthMenu": [[5,10,50, -1], [5,10,50, "All"]]
         });
     });
 </script>

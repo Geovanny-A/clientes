@@ -20,6 +20,9 @@ class CreateClientesTable extends Migration
             $table->string('documento');
             $table->string('estado', 45);
             $table->string('direccion', 45);
+            $table->string('pais', 45);
+            $table->string('departamento', 45);
+            $table->string('ciudad', 45);
             $table->string('barrio', 45);
             $table->string('celular', 20);
             $table->date('fecha_nacimiento');

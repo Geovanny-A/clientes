@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 Route::resource('clientes', 'App\Http\Controllers\ClienteController');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dash', function () {
-    return view('dash.index');
-})->name('dash');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard.index');
+})->name('dashboard');

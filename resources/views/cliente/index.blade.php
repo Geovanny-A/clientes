@@ -3,11 +3,11 @@
 @section('title', 'Clientes')
 
 @section('content_header')
-<h2>Clientes</h2>
+<h2><i class="fas fa-user"></i> Clientes</h2>
 @stop
 
 @section('content')
-<a href="clientes/create" class="btn btn-primary mb-3">Nuevo cliente</a>
+<a href="clientes/create" class="btn mb-3"><i class="fas fa-plus"></i></a>
 
 <table id="clientes" class="table table-borderless mt-4 ">
     <thead>
@@ -19,17 +19,20 @@
         </tr>
     </thead>
     <tbody>
+
+
         @foreach($clientes as $cliente)
+
         <tr>
             <td>{{$cliente->nombre}}</td>
             <td>{{$cliente->documento}}</td>
             <td>{{$cliente->celular}}</td>
             <td>
                 <form action="{{route('clientes.destroy', $cliente->id)}}" method="POST">
-                    <a href="/clientes/{{$cliente->id}}/edit" class="btn btn-info">Editar</a>
+                    <a href="/clientes/{{$cliente->id}}/edit" class="btn"><i class="fas fa-pencil-alt"></i></a>
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Borrar</button>
+                    <button type="submit" class="btn"><i class="fas fa-minus-circle"></i></button>
                 </form>
             </td>
         </tr>
@@ -38,7 +41,11 @@
 
     </tbody>
 </table>
-
+<hr size="2px" color="black" />
+<?php
+    $contador = count($clientes);
+        echo $contador . " Clientes";
+?>
 @stop
 
 @section('css')
@@ -54,7 +61,10 @@
 <script>
     $(document).ready(function() {
         $('#clientes').DataTable({
-            "lengthMenu": [[5,10,50, -1], [5,10,50, "All"]]
+            "lengthMenu": [
+                [5, 10, 50, -1],
+                [5, 10, 50, "All"]
+            ]
         });
     });
 </script>

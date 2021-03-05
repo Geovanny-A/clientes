@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Crear')
 
 @section('content_header')
 <h2>Nuevo cliente</h2>
@@ -17,7 +17,7 @@
         </div>
         <div class="col">
             <div class="mb-3">
-                <select name="tipo" class="form-control">
+                <select required name="tipo" class="form-control" >
                     <option disabled selected>Tipo documento</option>
                     <option value="CC">CC</option>
                     <option value="TI">TI</option>

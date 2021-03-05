@@ -18,7 +18,7 @@
         <div class="col">
             <div class="mb-3">
                 <select required name="tipo" class="form-control" >
-                    <option disabled selected>Tipo documento</option>
+                    <option value="">Tipo documento</option>
                     <option value="CC">CC</option>
                     <option value="TI">TI</option>
                     <option value="CE">CE</option>
@@ -32,8 +32,8 @@
         </div>
         <div class="col">
             <div class="mb-3">
-                <select name="estado" class="form-control">
-                    <option disabled selected>Estado civil</option>
+                <select required name="estado" class="form-control">
+                    <option value="">Estado civil</option>
                     <option value="soltero">Soltero</option>
                     <option value="casado">Casado</option>
                     <option value="divorciado">Divorciado</option>
@@ -51,8 +51,8 @@
 
         <div class="col">
             <div class="mb-3">
-                <select name="pais" class="form-control">
-                    <option disabled selected>Pais</option>
+                <select required name="pais" class="form-control">
+                    <option value="">Pais</option>
                     <option value="colombia">Colombia</option>
                     <option value="mexico">México</option>
                     <option value="canada">Canadá</option>
@@ -63,8 +63,8 @@
 
         <div class="col">
             <div class="mb-3">
-                <select name="departamento" class="form-control">
-                    <option disabled selected>Departamento</option>
+                <select required name="departamento" class="form-control">
+                    <option value="">Departamento</option>
                     <option value="norte de santander">Norte de santander</option>
                     <option value="cesar">Cesar</option>
                     <option value="santander">Santander</option>
@@ -75,8 +75,8 @@
 
         <div class="col">
             <div class="mb-3">
-                <select name="ciudad" class="form-control">
-                    <option disabled selected>Ciudad</option>
+                <select required name="ciudad" class="form-control">
+                    <option value="">Ciudad</option>
                     <option value="ocaña">Ocaña</option>
                     <option value="aguachica">Aguachica</option>
                     <option value="bucaramanga">Bucaramanga</option>
@@ -106,8 +106,8 @@
         </div>
         <div class="col">
             <div class="mb-3">
-                <select name="genero" class="form-control">
-                    <option disabled selected>Genero</option>
+                <select required name="genero" class="form-control">
+                    <option value="">Genero</option>
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
                 </select>

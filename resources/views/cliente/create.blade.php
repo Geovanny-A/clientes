@@ -101,7 +101,7 @@
 
         <div class="col">
             <div class="mb-3">
-                <input class="input100 form-control" type="text" name="fechaNacimiento" placeholder="Fecha de Nacimiento" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input required class="input100 form-control" type="text" name="fechaNacimiento" placeholder="Fecha de Nacimiento" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')">
             </div>
         </div>
         <div class="col">
